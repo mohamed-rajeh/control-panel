@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace Dashboard.formwindow
 {
@@ -99,15 +102,45 @@ namespace Dashboard.formwindow
             }
         }
 
-        private void Add_picture_Click(object sender, EventArgs e)
+        private  void Add_picture_ClickAsync(object sender, EventArgs e)
         {
             OpenFileDialog f = new OpenFileDialog();
-            f.Title = "open images";
-            f.Filter = "ALL Images |*.PNG; *.jpg; *.BMB";
+            f.Title = "Open Image";
+            f.Filter = "All Images (*.png;*.jpg;*.bmp)|*.png;*.jpg;*.bmp";
+
             if (f.ShowDialog() == DialogResult.OK)
             {
+                
                 img_service.Image = Image.FromFile(f.FileName);
+                _ = upimgAsync(f.FileName);
+
+               
             }
+        }
+
+        async Task upimgAsync(string img)
+        {
+            MessageBox.Show(img);
+
+            string apiUrl = "https://localhost/ser/uploud_img.php";
+
+            var client = new HttpClient();
+            var request = new HttpRequestMessage();
+            request.RequestUri = new Uri(apiUrl);
+            request.Method = HttpMethod.Post;
+            request.Headers.Add("Accept", "*/*");
+            request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
+            var content = new MultipartFormDataContent();
+            content.Add(new ByteArrayContent(File.ReadAllBytes(img)), "file", "picture");
+            request.Content = content;
+            MessageBox.Show("b clint");
+
+            var response = await client.SendAsync(request);
+            MessageBox.Show(response.ToString());
+
+            var result = await response.Content.ReadAsStringAsync();
+            MessageBox.Show(result);
+
         }
     }
 }

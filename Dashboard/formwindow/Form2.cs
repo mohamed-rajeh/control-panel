@@ -13,10 +13,17 @@ namespace Dashboard
         public Form2()
         {
             InitializeComponent();
-            ////panl_v.Height = but_User.Height;
-            ////panl_v.Top = but_User.Top;
-            ////panl_v.Left = but_User.Left;
-            ////but_User.BackColor = Color.FromArgb(46, 51, 73);
+            try
+            {
+                but_order_Click(null, null); 
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+            
+
 
         }
         private void addUserControl(UserControl usercontrol)

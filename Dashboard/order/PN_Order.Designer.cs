@@ -68,7 +68,7 @@
             this.lbl_order_date.AutoEllipsis = true;
             this.lbl_order_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_order_date.ForeColor = System.Drawing.Color.Black;
-            this.lbl_order_date.Location = new System.Drawing.Point(585, 23);
+            this.lbl_order_date.Location = new System.Drawing.Point(572, 23);
             this.lbl_order_date.Name = "lbl_order_date";
             this.lbl_order_date.Size = new System.Drawing.Size(166, 22);
             this.lbl_order_date.TabIndex = 51;
@@ -79,9 +79,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.panel2.Location = new System.Drawing.Point(2, 63);
+            this.panel2.Location = new System.Drawing.Point(3, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(891, 6);
+            this.panel2.Size = new System.Drawing.Size(891, 3);
             this.panel2.TabIndex = 50;
             // 
             // lbl_state
@@ -89,7 +89,7 @@
             this.lbl_state.AutoEllipsis = true;
             this.lbl_state.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_state.ForeColor = System.Drawing.Color.Black;
-            this.lbl_state.Location = new System.Drawing.Point(793, 22);
+            this.lbl_state.Location = new System.Drawing.Point(776, 22);
             this.lbl_state.Name = "lbl_state";
             this.lbl_state.Size = new System.Drawing.Size(88, 22);
             this.lbl_state.TabIndex = 49;

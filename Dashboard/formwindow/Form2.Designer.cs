@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.but_pic_setting = new System.Windows.Forms.PictureBox();
             this.but_sttings = new System.Windows.Forms.Button();
@@ -47,15 +48,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.but_workers = new System.Windows.Forms.Button();
             this.but_services = new System.Windows.Forms.Button();
+            this.but_User = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_time1 = new Dashboard.time_and_date.UC_time();
+            this.uC_date1 = new Dashboard.time_and_date.UC_date();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Elipse_form2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel_display = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.uC_time1 = new Dashboard.time_and_date.UC_time();
-            this.uC_date1 = new Dashboard.time_and_date.UC_date();
-            this.but_User = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.but_pic_setting)).BeginInit();
@@ -91,6 +91,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 748);
             this.panel1.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Red;
+            this.panel5.Location = new System.Drawing.Point(51, 178);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 305);
+            this.panel5.TabIndex = 11;
             // 
             // panel4
             // 
@@ -317,6 +325,24 @@
             this.but_services.Click += new System.EventHandler(this.but_services_Click);
             this.but_services.Leave += new System.EventHandler(this.but_services_Leave);
             // 
+            // but_User
+            // 
+            this.but_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.but_User.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_User.FlatAppearance.BorderSize = 0;
+            this.but_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_User.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_User.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(249)))));
+            this.but_User.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.but_User.Location = new System.Drawing.Point(1, 167);
+            this.but_User.Name = "but_User";
+            this.but_User.Size = new System.Drawing.Size(189, 61);
+            this.but_User.TabIndex = 2;
+            this.but_User.Text = "Users";
+            this.but_User.UseVisualStyleBackColor = false;
+            this.but_User.Click += new System.EventHandler(this.but_User_Click);
+            this.but_User.Leave += new System.EventHandler(this.but_User_Leave);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -328,6 +354,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(974, 30);
             this.panel2.TabIndex = 19;
+            // 
+            // uC_time1
+            // 
+            this.uC_time1.Location = new System.Drawing.Point(144, 2);
+            this.uC_time1.Name = "uC_time1";
+            this.uC_time1.Size = new System.Drawing.Size(136, 25);
+            this.uC_time1.TabIndex = 2;
+            // 
+            // uC_date1
+            // 
+            this.uC_date1.Location = new System.Drawing.Point(-14, 0);
+            this.uC_date1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uC_date1.Name = "uC_date1";
+            this.uC_date1.Size = new System.Drawing.Size(159, 25);
+            this.uC_date1.TabIndex = 1;
             // 
             // gunaButton1
             // 
@@ -365,47 +406,6 @@
             this.panel_display.Name = "panel_display";
             this.panel_display.Size = new System.Drawing.Size(974, 718);
             this.panel_display.TabIndex = 20;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Red;
-            this.panel5.Location = new System.Drawing.Point(51, 178);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 305);
-            this.panel5.TabIndex = 11;
-            // 
-            // uC_time1
-            // 
-            this.uC_time1.Location = new System.Drawing.Point(144, 2);
-            this.uC_time1.Name = "uC_time1";
-            this.uC_time1.Size = new System.Drawing.Size(136, 25);
-            this.uC_time1.TabIndex = 2;
-            // 
-            // uC_date1
-            // 
-            this.uC_date1.Location = new System.Drawing.Point(-14, 0);
-            this.uC_date1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uC_date1.Name = "uC_date1";
-            this.uC_date1.Size = new System.Drawing.Size(159, 25);
-            this.uC_date1.TabIndex = 1;
-            // 
-            // but_User
-            // 
-            this.but_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.but_User.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_User.FlatAppearance.BorderSize = 0;
-            this.but_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_User.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_User.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(249)))));
-            this.but_User.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.but_User.Location = new System.Drawing.Point(1, 167);
-            this.but_User.Name = "but_User";
-            this.but_User.Size = new System.Drawing.Size(189, 61);
-            this.but_User.TabIndex = 2;
-            this.but_User.Text = "Users";
-            this.but_User.UseVisualStyleBackColor = false;
-            this.but_User.Click += new System.EventHandler(this.but_User_Click);
-            this.but_User.Leave += new System.EventHandler(this.but_User_Leave);
             // 
             // Form2
             // 

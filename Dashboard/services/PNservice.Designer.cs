@@ -50,15 +50,15 @@
             // 
             // lbl_service
             // 
-            this.lbl_service.AutoSize = true;
+            this.lbl_service.AutoEllipsis = true;
             this.lbl_service.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_service.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.lbl_service.Location = new System.Drawing.Point(13, 59);
+            this.lbl_service.Location = new System.Drawing.Point(3, 59);
             this.lbl_service.Name = "lbl_service";
-            this.lbl_service.Size = new System.Drawing.Size(54, 18);
+            this.lbl_service.Size = new System.Drawing.Size(78, 18);
             this.lbl_service.TabIndex = 2;
             this.lbl_service.Text = "Admin";
-            this.lbl_service.Click += new System.EventHandler(this.lbl_service_Click);
+            this.lbl_service.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Elipse1
             // 
@@ -76,10 +76,8 @@
             this.Margin = new System.Windows.Forms.Padding(20, 10, 3, 3);
             this.Name = "PNservice";
             this.Size = new System.Drawing.Size(84, 84);
-            this.Load += new System.EventHandler(this.PNservice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picture_service)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

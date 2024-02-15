@@ -77,7 +77,6 @@
             this.Margin = new System.Windows.Forms.Padding(7, 7, 3, 3);
             this.Name = "PN_worker";
             this.Size = new System.Drawing.Size(82, 82);
-            this.Load += new System.EventHandler(this.pro_control_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picture_worker)).EndInit();
             this.ResumeLayout(false);
 

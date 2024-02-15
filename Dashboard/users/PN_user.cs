@@ -25,7 +25,9 @@ namespace Dashboard
             Client_information.Show();
         }
 
-
-
+        private void PN_user_Load(object sender, EventArgs e)
+        {
+            pic_user.Image = _user.Gender ? Properties.Resources.male : Properties.Resources.fmale;
+        }
     }
 }

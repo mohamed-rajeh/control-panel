@@ -1,6 +1,6 @@
 ﻿namespace Dashboard.services
 {
-    partial class service_info_form
+    partial class service_details
     {
         /// <summary> 
         /// Required designer variable.
@@ -39,11 +39,11 @@
             this.txt_details = new Guna.UI.WinForms.GunaTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox_Available_service = new Guna.UI.WinForms.GunaMediumCheckBox();
-            this.txt_cotg = new Guna.UI.WinForms.GunaTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.txt_cotg = new Guna.UI.WinForms.GunaTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
@@ -233,26 +233,6 @@
             this.checkBox_Available_service.Size = new System.Drawing.Size(20, 20);
             this.checkBox_Available_service.TabIndex = 83;
             // 
-            // txt_cotg
-            // 
-            this.txt_cotg.BaseColor = System.Drawing.Color.White;
-            this.txt_cotg.BorderColor = System.Drawing.Color.Transparent;
-            this.txt_cotg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_cotg.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_cotg.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.txt_cotg.FocusedForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txt_cotg.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.txt_cotg.Location = new System.Drawing.Point(304, 97);
-            this.txt_cotg.Multiline = true;
-            this.txt_cotg.Name = "txt_cotg";
-            this.txt_cotg.PasswordChar = '\0';
-            this.txt_cotg.ReadOnly = true;
-            this.txt_cotg.SelectedText = "";
-            this.txt_cotg.Size = new System.Drawing.Size(211, 38);
-            this.txt_cotg.TabIndex = 80;
-            this.txt_cotg.Text = "cotg";
-            this.txt_cotg.TextChanged += new System.EventHandler(this.Txt_Descrip_service_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -297,7 +277,27 @@
             this.label9.TabIndex = 43;
             this.label9.Text = "Cotg";
             // 
-            // service_info_form
+            // txt_cotg
+            // 
+            this.txt_cotg.BaseColor = System.Drawing.Color.White;
+            this.txt_cotg.BorderColor = System.Drawing.Color.Transparent;
+            this.txt_cotg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_cotg.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_cotg.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.txt_cotg.FocusedForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txt_cotg.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.txt_cotg.Location = new System.Drawing.Point(304, 97);
+            this.txt_cotg.Multiline = true;
+            this.txt_cotg.Name = "txt_cotg";
+            this.txt_cotg.PasswordChar = '\0';
+            this.txt_cotg.ReadOnly = true;
+            this.txt_cotg.SelectedText = "";
+            this.txt_cotg.Size = new System.Drawing.Size(211, 38);
+            this.txt_cotg.TabIndex = 80;
+            this.txt_cotg.Text = "cotg";
+            this.txt_cotg.TextChanged += new System.EventHandler(this.Txt_Descrip_service_TextChanged);
+            // 
+            // service_details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -307,7 +307,7 @@
             this.Controls.Add(this.gunaElipsePanel2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "service_info_form";
+            this.Name = "service_details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "service information";
             this.Load += new System.EventHandler(this.service_info_form_Load);
@@ -328,7 +328,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaMediumCheckBox checkBox_Available_service;
-        private Guna.UI.WinForms.GunaTextBox txt_cotg;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
         private Guna.UI.WinForms.GunaButton but_Edit;
         private Guna.UI.WinForms.GunaTextBox txt_name;
@@ -337,5 +336,6 @@
         private System.Windows.Forms.ComboBox cmb_cat;
         private Guna.UI.WinForms.GunaTextBox txt_desc;
         private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaTextBox txt_cotg;
     }
 }

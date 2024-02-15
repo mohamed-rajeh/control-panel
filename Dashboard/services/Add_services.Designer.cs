@@ -341,7 +341,7 @@
             this.Add_picture.Size = new System.Drawing.Size(121, 39);
             this.Add_picture.TabIndex = 95;
             this.Add_picture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Add_picture.Click += new System.EventHandler(this.Add_picture_Click);
+            this.Add_picture.Click += new System.EventHandler(this.Add_picture_ClickAsync);
             // 
             // label7
             // 

@@ -77,6 +77,7 @@
             this.Margin = new System.Windows.Forms.Padding(20, 10, 3, 3);
             this.Name = "PN_user";
             this.Size = new System.Drawing.Size(104, 98);
+            this.Load += new System.EventHandler(this.PN_user_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_user)).EndInit();
             this.ResumeLayout(false);
 

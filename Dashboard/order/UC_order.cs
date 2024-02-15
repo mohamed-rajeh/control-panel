@@ -7,17 +7,23 @@ namespace Dashboard.order
 {
     public partial class UC_order : UserControl
     {
-        List<Order> orders = new List<Order>();
+       private List<Order> _orders = new List<Order>();
         public UC_order()
         {
             InitializeComponent();
-            orders.AddRange(OrderController.getAllOrders());
+            _orders.AddRange(OrderController.getAllOrders());
+
 
         }
 
-        private void Add_order()
+        private void Add_order(List<Order> orders)
         {
-            foreach (var order in orders)
+            flowLayoutPanel1.Controls.Clear();
+            // if(orders.Count ==0 || orders ==null ) lbl_noItems.Visible = true;
+          
+            //  soso shuod fix this ^_^
+           //  if (orders.Count == 0 || orders == null) flowLayoutPanel1.Controls.Add(lbl_noItems);
+                foreach (var order in orders)
             {
                 PN_Order list_Order_Clients = new PN_Order(order);
                 flowLayoutPanel1.Controls.Add(list_Order_Clients);
@@ -25,103 +31,81 @@ namespace Dashboard.order
 
 
 
-
-
-
-
-            ///
-            /// soooooheb coooooooooooooooooooode
-            ///
-
-
-
-
-            //string[] order_service_name = { "مهندس دش", "كهربائي", "سباك" };
-            ////populate it here 
-            //string[] orderid = { "Null", "null", "null" };
-            //string[] name_client = { "mohamed", "Ali", "mansor" };
-            //string[] order_state = { "ملغي", "تم", "قيد الموافقة" };
-
-
-            //List_Order_Client[] list_order_client = new List_Order_Client[orders.Count];
-
-            // loop through each itme
-            //for (int i = 0; i < list_order_client.Length; i++)
-            //{
-            //    list_order_client[i] = new List_Order_Client();
-            //    list_order_client[i].laple_service_order = orders[i].service.name;
-            //    list_order_client[i].laple_orderID = orders[i].id;
-            //    list_order_client[i].lapel_cname = orders[i].customer.Name;
-            //    list_order_client[i].lapel_state = orders[i].state.name;
-            //   list_order_client[i].order = orders[i];
-
-
-            //   pro_control[i].picture = Image.FromFile("C:\\Users\tehama\\Desktop\\New folder\\photo_2023-01-02_23-38-56.jpg");
-
-            //add to flowlayout
-            //if (flowLayoutPanel1.Controls.Count >0)
-            //{
-            //    flowLayoutPanel1.Controls.Clear();
-            //}
-            //else
-            //flowLayoutPanel1.Controls.Add(list_order_client[i]);
-
-
-            ///
-            /// soooooheb cooooooooooooooooooooooooooooooooooooooooooooooooooooode
-            ///
-
-
-
         }
+
+        //Get all orders
         private void label13_Click(object sender, EventArgs e)
         {
             panel_line_lable.Width = label_all.Width;
 
             panel_line_lable.Top = label_all.Bottom;
             panel_line_lable.Left = label_all.Left;
-
+          
+            Add_order(_orders);
 
         }
 
+        // Get the new orders 
         private void labe_new_Click(object sender, EventArgs e)
         {
             panel_line_lable.Width = label_new.Width;
             panel_line_lable.Top = label_new.Bottom;
             panel_line_lable.Left = label_new.Left;
+
+            List<Order> orders = _orders.FindAll(order => order.state.id == "1");
+            Add_order(orders);
         }
 
+        // Get the accepted orders 
         private void label_cancel_Click(object sender, EventArgs e)
         {
-            panel_line_lable.Width = label_cancel.Width;
-            panel_line_lable.Top = label_cancel.Bottom;
-            panel_line_lable.Left = label_cancel.Left;
+            panel_line_lable.Width = label_accepted.Width;
+            panel_line_lable.Top = label_accepted.Bottom;
+            panel_line_lable.Left = label_accepted.Left;
+
+            List<Order> orders = _orders.FindAll(order => order.state.id == "2");
+            Add_order(orders);
         }
         private void UC_order_Load(object sender, EventArgs e)
         {
-            Add_order();
+           
             // to show count of orders hav done . 
-            lbl_done_orders.Text = orders.FindAll(order=> order.state.name.ToLower() == "done").Count.ToString();
+            lbl_done_orders.Text = _orders.FindAll(order=> order.state.name.ToLower() == "done").Count.ToString();
+            labe_new_Click(null, null);
+
         }
 
         private void text_order_search_Enter_1(object sender, EventArgs e)
         {
-            if (text_order_search.Text == "search")
+            if (txt_search.Text == "search")
             {
-                text_order_search.Text = "";
+                txt_search.Text = "";
 
-                text_order_search.ForeColor = Color.Black;
+                txt_search.ForeColor = Color.Black;
             }
         }
 
-        private void text_order_search_Leave(object sender, EventArgs e)
-        {
-            if (text_order_search.Text == "")
-            {
-                text_order_search.Text = "search";
 
-                text_order_search.ForeColor = Color.Silver;
-            }
+
+
+        private void txt_search_TextChanged_1(object sender, EventArgs e)
+        {
+            // find all orders that Contain a value in search TextBox 
+            List<Order> orders = _orders.FindAll(order => order.customer.Name.Contains(txt_search.Text) ||
+                                                          order.service.name.Contains(txt_search.Text) ||
+                                                          order.id.Contains(txt_search.Text) ||
+                                                          order.state.name.Contains(txt_search.Text));
+            Add_order(orders);
+        }
+
+        private void txt_search_Click(object sender, EventArgs e)
+        {
+            label13_Click(null, null);  
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -64,7 +64,7 @@ namespace Dashboard
         {
             if (but_block.Text == "blocked")
             {
-                if (MessageBox.Show("Do you want to activate this user?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                if (MessageBox.Show("Do you want to activate this user?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
                 {
                     UserController.blockOrActeiveUser(user.Id, true);
 
@@ -77,7 +77,7 @@ namespace Dashboard
             }
             if (but_block.Text == "active")
             {
-                if (MessageBox.Show("Do you want to block this user?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                if (MessageBox.Show("Do you want to block this user?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
                 {
                     UserController.blockOrActeiveUser(user.Id, false);
                     but_block.Image = Properties.Resources.Cancel_48px;

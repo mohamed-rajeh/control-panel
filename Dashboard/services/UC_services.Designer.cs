@@ -35,7 +35,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.but_add = new Guna.UI.WinForms.GunaButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.text_service_search = new Guna.UI.WinForms.GunaTextBox();
+            this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.servicers_Unavailable_Label = new Guna.UI.WinForms.GunaLabel();
             this.Panel_Unavailable = new Guna.UI.WinForms.GunaGradientPanel();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -106,36 +106,36 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.panel2.Controls.Add(this.txt_search);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Controls.Add(this.text_service_search);
             this.panel2.Controls.Add(this.but_add);
             this.panel2.Location = new System.Drawing.Point(187, 150);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(885, 565);
             this.panel2.TabIndex = 72;
             // 
-            // text_service_search
+            // txt_search
             // 
-            this.text_service_search.AllowDrop = true;
-            this.text_service_search.BackColor = System.Drawing.Color.Transparent;
-            this.text_service_search.BaseColor = System.Drawing.Color.White;
-            this.text_service_search.BorderColor = System.Drawing.Color.Silver;
-            this.text_service_search.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.text_service_search.FocusedBaseColor = System.Drawing.Color.White;
-            this.text_service_search.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.text_service_search.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.text_service_search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.text_service_search.ForeColor = System.Drawing.Color.Silver;
-            this.text_service_search.Location = new System.Drawing.Point(35, 28);
-            this.text_service_search.Name = "text_service_search";
-            this.text_service_search.PasswordChar = '\0';
-            this.text_service_search.Radius = 10;
-            this.text_service_search.SelectedText = "";
-            this.text_service_search.Size = new System.Drawing.Size(268, 43);
-            this.text_service_search.TabIndex = 72;
-            this.text_service_search.Text = "search";
-            this.text_service_search.Enter += new System.EventHandler(this.text_service_search_Enter);
-            this.text_service_search.Leave += new System.EventHandler(this.text_service_search_Leave);
+            this.txt_search.BorderRadius = 10;
+            this.txt_search.BorderThickness = 2;
+            this.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search.DefaultText = "";
+            this.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.Location = new System.Drawing.Point(35, 28);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.PasswordChar = '\0';
+            this.txt_search.PlaceholderText = "Search ... ";
+            this.txt_search.SelectedText = "";
+            this.txt_search.Size = new System.Drawing.Size(268, 43);
+            this.txt_search.TabIndex = 73;
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
             // 
             // servicers_Unavailable_Label
             // 
@@ -203,9 +203,9 @@
         private Guna.UI.WinForms.GunaButton but_add;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI.WinForms.GunaLabel servicers_Unavailable_Label;
-        private Guna.UI.WinForms.GunaTextBox text_service_search;
         private Guna.UI.WinForms.GunaGradientPanel Panel_Unavailable;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_search;
     }
 }

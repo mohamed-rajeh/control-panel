@@ -41,7 +41,7 @@
             this.but_Request_workers = new Guna.UI.WinForms.GunaButton();
             this.but_add_provider = new Guna.UI.WinForms.GunaButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.text_worker_search = new Guna.UI.WinForms.GunaTextBox();
+            this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.gunaGradientPanel2.SuspendLayout();
             this.gunaGradientPanel1.SuspendLayout();
@@ -222,7 +222,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Window;
-            this.panel3.Controls.Add(this.text_worker_search);
+            this.panel3.Controls.Add(this.txt_search);
             this.panel3.Controls.Add(this.but_add_provider);
             this.panel3.Controls.Add(this.but_Request_workers);
             this.panel3.Controls.Add(this.flowLayoutPanel1);
@@ -230,30 +230,29 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(839, 598);
             this.panel3.TabIndex = 79;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // text_worker_search
+            // txt_search
             // 
-            this.text_worker_search.AllowDrop = true;
-            this.text_worker_search.BackColor = System.Drawing.Color.Transparent;
-            this.text_worker_search.BaseColor = System.Drawing.Color.White;
-            this.text_worker_search.BorderColor = System.Drawing.Color.Silver;
-            this.text_worker_search.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.text_worker_search.FocusedBaseColor = System.Drawing.Color.White;
-            this.text_worker_search.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.text_worker_search.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.text_worker_search.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.text_worker_search.ForeColor = System.Drawing.Color.Silver;
-            this.text_worker_search.Location = new System.Drawing.Point(280, 133);
-            this.text_worker_search.Name = "text_worker_search";
-            this.text_worker_search.PasswordChar = '\0';
-            this.text_worker_search.Radius = 10;
-            this.text_worker_search.SelectedText = "";
-            this.text_worker_search.Size = new System.Drawing.Size(268, 43);
-            this.text_worker_search.TabIndex = 80;
-            this.text_worker_search.Text = "search";
-            this.text_worker_search.TextChanged += new System.EventHandler(this.text_worker_search_TextChanged);
-            this.text_worker_search.Enter += new System.EventHandler(this.text_worker_search_Enter);
+            this.txt_search.BorderRadius = 10;
+            this.txt_search.BorderThickness = 2;
+            this.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search.DefaultText = "";
+            this.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.Location = new System.Drawing.Point(288, 144);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.PasswordChar = '\0';
+            this.txt_search.PlaceholderText = "Search ... ";
+            this.txt_search.SelectedText = "";
+            this.txt_search.Size = new System.Drawing.Size(268, 43);
+            this.txt_search.TabIndex = 82;
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
             // 
             // provider_UC
             // 
@@ -288,9 +287,9 @@
         private System.Windows.Forms.Panel panel3;
         private Guna.UI.WinForms.GunaButton but_Request_workers;
         private Guna.UI.WinForms.GunaButton but_add_provider;
-        private Guna.UI.WinForms.GunaTextBox text_worker_search;
         private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel2;
         private Guna.UI.WinForms.GunaLabel lbl_providers_count;
         private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_search;
     }
 }

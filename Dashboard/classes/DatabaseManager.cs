@@ -22,10 +22,19 @@ public class DatabaseManager
 
     public void OpenConnection()
     {
-        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        try
         {
-            connection.Open();
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+            }
         }
+        catch (Exception e)
+        {
+
+            throw e;
+        }
+ 
     }
 
 

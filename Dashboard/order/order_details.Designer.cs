@@ -149,12 +149,11 @@
             // 
             // lbl_date
             // 
-            this.lbl_date.AutoSize = true;
             this.lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.lbl_date.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_date.Location = new System.Drawing.Point(700, 5);
+            this.lbl_date.Location = new System.Drawing.Point(660, 5);
             this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(110, 24);
+            this.lbl_date.Size = new System.Drawing.Size(228, 24);
             this.lbl_date.TabIndex = 93;
             this.lbl_date.Text = "Order date";
             // 
@@ -422,7 +421,7 @@
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.lbl_id.Location = new System.Drawing.Point(195, 11);
+            this.lbl_id.Location = new System.Drawing.Point(199, 11);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(31, 26);
             this.lbl_id.TabIndex = 54;

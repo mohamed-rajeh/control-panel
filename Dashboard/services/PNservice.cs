@@ -18,18 +18,10 @@ namespace Dashboard.services
 
         private void picture_service_Click(object sender, EventArgs e)
         {
-            service_info_form _Info_Form = new service_info_form(_service);
+            service_details _Info_Form = new service_details(_service);
             _Info_Form.ShowDialog();
         }
 
-        private void PNservice_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_service_Click(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }
