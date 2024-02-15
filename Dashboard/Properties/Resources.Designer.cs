@@ -133,6 +133,16 @@ namespace Dashboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fmale {
+            get {
+                object obj = ResourceManager.GetObject("fmale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Glue_40px {
             get {
                 object obj = ResourceManager.GetObject("Glue_40px", resourceCulture);
@@ -156,6 +166,16 @@ namespace Dashboard.Properties {
         internal static System.Drawing.Bitmap Lock_2_48px {
             get {
                 object obj = ResourceManager.GetObject("Lock 2_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male {
+            get {
+                object obj = ResourceManager.GetObject("male", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

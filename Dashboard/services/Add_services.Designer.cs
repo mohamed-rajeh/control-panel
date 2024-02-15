@@ -47,7 +47,6 @@
             this.but_block = new Guna.UI.WinForms.GunaButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.Add_picture = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label7 = new System.Windows.Forms.Label();
             this.img_service = new Guna.UI.WinForms.GunaPictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -308,7 +307,6 @@
             this.gunaElipsePanel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel3.BaseColor = System.Drawing.Color.White;
             this.gunaElipsePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gunaElipsePanel3.Controls.Add(this.Add_picture);
             this.gunaElipsePanel3.Controls.Add(this.label7);
             this.gunaElipsePanel3.Controls.Add(this.img_service);
             this.gunaElipsePanel3.Controls.Add(this.label8);
@@ -319,29 +317,7 @@
             // 
             // Add_picture
             // 
-            this.Add_picture.ActiveBorderThickness = 1;
-            this.Add_picture.ActiveCornerRadius = 20;
-            this.Add_picture.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Add_picture.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.BackColor = System.Drawing.Color.Transparent;
-            this.Add_picture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_picture.BackgroundImage")));
-            this.Add_picture.ButtonText = "Add picture";
-            this.Add_picture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_picture.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_picture.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.IdleBorderThickness = 1;
-            this.Add_picture.IdleCornerRadius = 20;
-            this.Add_picture.IdleFillColor = System.Drawing.Color.White;
-            this.Add_picture.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.Location = new System.Drawing.Point(62, 187);
-            this.Add_picture.Margin = new System.Windows.Forms.Padding(5);
-            this.Add_picture.Name = "Add_picture";
-            this.Add_picture.Size = new System.Drawing.Size(121, 39);
-            this.Add_picture.TabIndex = 95;
-            this.Add_picture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Add_picture.Click += new System.EventHandler(this.Add_picture_ClickAsync);
+
             // 
             // label7
             // 
@@ -418,7 +394,6 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaTextBox txt_desc;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
-        private Bunifu.Framework.UI.BunifuThinButton2 Add_picture;
         private System.Windows.Forms.Label label7;
         private Guna.UI.WinForms.GunaPictureBox img_service;
         private System.Windows.Forms.Label label8;

@@ -74,9 +74,6 @@
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaElipsePanel5 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -637,18 +634,12 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 17;
-            this.bunifuElipse1.TargetControl = this.Panel_user;
             // 
             // bunifuElipse2
             // 
-            this.bunifuElipse2.ElipseRadius = 17;
-            this.bunifuElipse2.TargetControl = this.Panel_services;
             // 
             // bunifuElipse3
             // 
-            this.bunifuElipse3.ElipseRadius = 17;
-            this.bunifuElipse3.TargetControl = this.Panel_orders;
             // 
             // gunaElipsePanel2
             // 
@@ -726,7 +717,6 @@
         private Guna.UI.WinForms.GunaLabel time_lable;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel4;
         private Guna.UI.WinForms.GunaGradientPanel Panel_user;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel12;
         private Guna.UI.WinForms.GunaGradientPanel Panel_orders;
@@ -742,8 +732,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+
         private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;

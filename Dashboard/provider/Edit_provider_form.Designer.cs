@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit_provider_form));
             this.label8 = new System.Windows.Forms.Label();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.Add_picture = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label7 = new System.Windows.Forms.Label();
             this.img_picure = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -40,7 +39,6 @@
             this.txt_note = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_phone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.but_addres_form = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txt_idcard = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -69,7 +67,6 @@
             this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel2.BaseColor = System.Drawing.Color.White;
             this.gunaElipsePanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gunaElipsePanel2.Controls.Add(this.Add_picture);
             this.gunaElipsePanel2.Controls.Add(this.label7);
             this.gunaElipsePanel2.Controls.Add(this.img_picure);
             this.gunaElipsePanel2.Controls.Add(this.label8);
@@ -80,30 +77,7 @@
             // 
             // Add_picture
             // 
-            this.Add_picture.ActiveBorderThickness = 1;
-            this.Add_picture.ActiveCornerRadius = 20;
-            this.Add_picture.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Add_picture.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.BackColor = System.Drawing.Color.Transparent;
-            this.Add_picture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_picture.BackgroundImage")));
-            this.Add_picture.ButtonText = "Uploud";
-            this.Add_picture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_picture.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_picture.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.IdleBorderThickness = 1;
-            this.Add_picture.IdleCornerRadius = 20;
-            this.Add_picture.IdleFillColor = System.Drawing.Color.White;
-            this.Add_picture.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.Add_picture.Location = new System.Drawing.Point(64, 188);
-            this.Add_picture.Margin = new System.Windows.Forms.Padding(5);
-            this.Add_picture.Name = "Add_picture";
-            this.Add_picture.Size = new System.Drawing.Size(121, 39);
-            this.Add_picture.TabIndex = 95;
-            this.Add_picture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Add_picture.Click += new System.EventHandler(this.Add_picture_Click);
-            // 
+    
             // label7
             // 
             this.label7.AutoSize = true;
@@ -136,7 +110,6 @@
             this.gunaElipsePanel1.Controls.Add(this.txt_note);
             this.gunaElipsePanel1.Controls.Add(this.txt_name);
             this.gunaElipsePanel1.Controls.Add(this.txt_phone);
-            this.gunaElipsePanel1.Controls.Add(this.but_addres_form);
             this.gunaElipsePanel1.Controls.Add(this.txt_idcard);
             this.gunaElipsePanel1.Controls.Add(this.label12);
             this.gunaElipsePanel1.Controls.Add(this.label2);
@@ -252,31 +225,7 @@
             this.txt_phone.TabIndex = 60;
             // 
             // but_addres_form
-            // 
-            this.but_addres_form.ActiveBorderThickness = 1;
-            this.but_addres_form.ActiveCornerRadius = 20;
-            this.but_addres_form.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.but_addres_form.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.but_addres_form.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.but_addres_form.BackColor = System.Drawing.Color.Transparent;
-            this.but_addres_form.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("but_addres_form.BackgroundImage")));
-            this.but_addres_form.ButtonText = "Edite";
-            this.but_addres_form.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_addres_form.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_addres_form.ForeColor = System.Drawing.Color.SeaGreen;
-            this.but_addres_form.IdleBorderThickness = 1;
-            this.but_addres_form.IdleCornerRadius = 20;
-            this.but_addres_form.IdleFillColor = System.Drawing.Color.White;
-            this.but_addres_form.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.but_addres_form.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.but_addres_form.Location = new System.Drawing.Point(141, 220);
-            this.but_addres_form.Margin = new System.Windows.Forms.Padding(5);
-            this.but_addres_form.Name = "but_addres_form";
-            this.but_addres_form.Size = new System.Drawing.Size(338, 46);
-            this.but_addres_form.TabIndex = 96;
-            this.but_addres_form.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.but_addres_form.Click += new System.EventHandler(this.but_addres_form_Click);
-            // 
+
             // txt_idcard
             // 
             this.txt_idcard.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -427,7 +376,6 @@
         private System.Windows.Forms.Label label8;
         private Guna.UI.WinForms.GunaButton but_block;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
-        private Bunifu.Framework.UI.BunifuThinButton2 Add_picture;
         private System.Windows.Forms.Label label7;
         private Guna.UI.WinForms.GunaPictureBox img_picure;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
@@ -436,7 +384,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_note;
         private Guna.UI2.WinForms.Guna2TextBox txt_name;
         private Guna.UI2.WinForms.Guna2TextBox txt_phone;
-        private Bunifu.Framework.UI.BunifuThinButton2 but_addres_form;
         private Guna.UI2.WinForms.Guna2TextBox txt_idcard;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label2;
