@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_photo = new System.Windows.Forms.PictureBox();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.cmb_cat = new System.Windows.Forms.ComboBox();
             this.txt_name = new Guna.UI.WinForms.GunaTextBox();
@@ -43,21 +43,22 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_cotg = new Guna.UI.WinForms.GunaTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_photo)).BeginInit();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pic_photo
             // 
-            this.pictureBox1.Image = global::Dashboard.Properties.Resources.Automation_48px;
-            this.pictureBox1.Location = new System.Drawing.Point(270, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 59;
-            this.pictureBox1.TabStop = false;
+            this.pic_photo.Enabled = false;
+            this.pic_photo.Image = global::Dashboard.Properties.Resources.Automation_48px;
+            this.pic_photo.Location = new System.Drawing.Point(271, 4);
+            this.pic_photo.Name = "pic_photo";
+            this.pic_photo.Size = new System.Drawing.Size(72, 66);
+            this.pic_photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_photo.TabIndex = 59;
+            this.pic_photo.TabStop = false;
+            this.pic_photo.Click += new System.EventHandler(this.pic_photo_Click);
             // 
             // gunaElipsePanel2
             // 
@@ -72,7 +73,6 @@
             this.gunaElipsePanel2.Controls.Add(this.gunaGroupBox1);
             this.gunaElipsePanel2.Controls.Add(this.label3);
             this.gunaElipsePanel2.Controls.Add(this.checkBox_Available_service);
-            this.gunaElipsePanel2.Controls.Add(this.txt_cotg);
             this.gunaElipsePanel2.Controls.Add(this.label1);
             this.gunaElipsePanel2.Controls.Add(this.label11);
             this.gunaElipsePanel2.Controls.Add(this.label7);
@@ -277,26 +277,6 @@
             this.label9.TabIndex = 43;
             this.label9.Text = "Cotg";
             // 
-            // txt_cotg
-            // 
-            this.txt_cotg.BaseColor = System.Drawing.Color.White;
-            this.txt_cotg.BorderColor = System.Drawing.Color.Transparent;
-            this.txt_cotg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_cotg.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_cotg.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.txt_cotg.FocusedForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txt_cotg.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.txt_cotg.Location = new System.Drawing.Point(304, 97);
-            this.txt_cotg.Multiline = true;
-            this.txt_cotg.Name = "txt_cotg";
-            this.txt_cotg.PasswordChar = '\0';
-            this.txt_cotg.ReadOnly = true;
-            this.txt_cotg.SelectedText = "";
-            this.txt_cotg.Size = new System.Drawing.Size(211, 38);
-            this.txt_cotg.TabIndex = 80;
-            this.txt_cotg.Text = "cotg";
-            this.txt_cotg.TextChanged += new System.EventHandler(this.Txt_Descrip_service_TextChanged);
-            // 
             // service_details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,13 +285,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(649, 653);
             this.Controls.Add(this.gunaElipsePanel2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pic_photo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "service_details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "service information";
             this.Load += new System.EventHandler(this.service_info_form_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_photo)).EndInit();
             this.gunaElipsePanel2.ResumeLayout(false);
             this.gunaElipsePanel2.PerformLayout();
             this.gunaGroupBox1.ResumeLayout(false);
@@ -321,7 +301,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_photo;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
@@ -336,6 +316,5 @@
         private System.Windows.Forms.ComboBox cmb_cat;
         private Guna.UI.WinForms.GunaTextBox txt_desc;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaTextBox txt_cotg;
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -34,6 +33,7 @@ namespace Dashboard.formwindow
             Service service = new Service(
                 null ,
                 txt_name_service.Text,
+                null,
                 cmb_cat.SelectedItem as Category,
                 Txt_price.Text,
                 chbox_available.Checked,
@@ -102,21 +102,58 @@ namespace Dashboard.formwindow
             }
         }
 
-        private  void Add_picture_ClickAsync(object sender, EventArgs e)
+        private void btn_addPhoto_Click(object sender, EventArgs e)
         {
-            OpenFileDialog f = new OpenFileDialog();
-            f.Title = "Open Image";
-            f.Filter = "All Images (*.png;*.jpg;*.bmp)|*.png;*.jpg;*.bmp";
+           _= UploadFileAsync();
+        }
 
-            if (f.ShowDialog() == DialogResult.OK)
+
+
+
+        //? dose not work
+        static async Task UploadFileAsync()
+        {
+            try
             {
-                
-                img_service.Image = Image.FromFile(f.FileName);
-                _ = upimgAsync(f.FileName);
+                using (var client = new HttpClient())
+                {
+                    // API endpoint URL
+                    var apiUrl = "https://localhost/ser/uploud_img.php";
 
-               
+                    using (var content = new MultipartFormDataContent())
+                    {
+                        // Add file content
+                        var filePath = "c:/Users/PC/Pictures/Screenshot 2023-03-02 130201.jpg";  // Replace with the actual file path
+                        var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+                        var fileContent = new StreamContent(fileStream);
+                        content.Add(fileContent, "file", Path.GetFileName(filePath));
+
+                        // Add additional parameters if needed
+
+                        // Send the request
+                        var response = await client.PostAsync(apiUrl, content);
+
+                        // Check the HTTP status code
+                        if (response.IsSuccessStatusCode)
+                        {
+                            var result = await response.Content.ReadAsStringAsync();
+                            Console.WriteLine($"File uploaded successfully. Server response: {result}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"File upload failed. Server returned: {response.StatusCode}");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
             }
         }
+
+
+        //? dose not work
 
         async Task upimgAsync(string img)
         {
@@ -128,8 +165,8 @@ namespace Dashboard.formwindow
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri(apiUrl);
             request.Method = HttpMethod.Post;
-            request.Headers.Add("Accept", "*/*");
-            request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
+            //request.Headers.Add("Accept", "*/*");
+            //request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
             var content = new MultipartFormDataContent();
             content.Add(new ByteArrayContent(File.ReadAllBytes(img)), "file", "picture");
             request.Content = content;
@@ -142,5 +179,64 @@ namespace Dashboard.formwindow
             MessageBox.Show(result);
 
         }
+
+        //? dose not work
+
+        async Task FunAsyncAsync()
+        {
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    var request = new HttpRequestMessage
+                    {
+                        RequestUri = new Uri("https://localhost/ser/uploud_img.php"),
+                        Method = HttpMethod.Post
+                    };
+
+                    request.Headers.Add("Accept", "*/*");
+                    request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
+
+                    var content = new MultipartFormDataContent();
+                    var filePath = "c:\\Users\\PC\\Pictures\\Screenshot 2023-03-02 130201.jpg";
+                    content.Add(new ByteArrayContent(File.ReadAllBytes(filePath)), "file", "picture");
+                    request.Content = content;
+
+                    var response = await client.SendAsync(request);
+
+                    // Check the HTTP status code
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var result = await response.Content.ReadAsStringAsync();
+                        Console.WriteLine(result);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Server returned an error: {response.StatusCode}");
+                    }
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                Console.WriteLine($"Request failed: {ex.Message}");
+                // Handle or log the exception
+            }
+            Console.WriteLine("End");
+        }
+
+        //{
+        //    OpenFileDialog f = new OpenFileDialog();
+        //    f.Title = "Open Image";
+        //    f.Filter = "All Images (*.png;*.jpg;*.bmp)|*.png;*.jpg;*.bmp";
+
+        //    if (f.ShowDialog() == DialogResult.OK)
+        //    {
+
+        //        img_service.Image = Image.FromFile(f.FileName);
+        //        _ = upimgAsync(f.FileName);
+
+
+        //    }
+        //}
     }
 }

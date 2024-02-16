@@ -6,21 +6,20 @@ using System.Drawing;
 using System.Windows.Forms;
 namespace Dashboard
 {
-    public partial class Form1 : Form
+    public partial class frm_login : Form
     {
         DatabaseManager dbm = new DatabaseManager();
         DataTable dt = new DataTable();
-        public Form1()
+        public frm_login()
         {
             InitializeComponent();
 
         }
 
 
-
-        private void but_login_user_Click(object sender, EventArgs e)
+        private void btn_login_Click(object sender, EventArgs e)
         {
-            string sql = "select * from admin where user_name='" + txt_user_name.Text + "'And password='" + txt_user_pass.Text + "' ";
+            string sql = "select * from admin where user_name='" + txt_uerName.Text + "'And password='" + txt_pass.Text + "' ";
             dt = dbm.ExecuteSelectQuery(sql);
             if (dt.Rows.Count > 0)
             {
@@ -28,95 +27,44 @@ namespace Dashboard
                 Form2 form = new Form2();
                 form.Show();
                 return;
-            }
-
-            else if (txt_user_name.Text == "User Name" && txt_user_pass.Text == "Password")
-            {
-                MessageBox.Show("write user and password");
-            }
-            else if (txt_user_name.Text == "User Name")
-            {
-                MessageBox.Show("write user name");
-            }
-            else if (txt_user_pass.Text == "Password")
-            {
-                MessageBox.Show("write Password");
-            }
+            } 
             else
             {
-                MessageBox.Show("rong");
+                MessageBox.Show("user name or password is wrong *_*");
             }
         }
 
-
-
-
-
-        private void txt_user_name_Enter(object sender, EventArgs e)
+        private void pictureBox3_MouseHover(object sender, EventArgs e)
         {
-            Panel_line_in_name.Visible = true;
-            if (txt_user_name.Text == "User Name")
+            pictureBox3.Image = Properties.Resources.RedClose;
+
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox3.Image = Properties.Resources.close;
+
+        }
+
+        private void txt_uerName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txt_uerName.Text.Trim() != String.Empty)
             {
-
-                txt_user_name.Text = "";
-
-                txt_user_name.ForeColor = Color.Blue;
-                //  txt_name.UseSystemPasswordChar
+                txt_pass.Focus();
             }
         }
 
-        private void txt_user_name_Validated(object sender, EventArgs e)
+        private void txt_pass_KeyDown(object sender, KeyEventArgs e)
         {
-            Panel_line_in_name.Visible = false;
-            if (txt_user_name.Text == "")
+            if (e.KeyCode == Keys.Enter && txt_pass.Text.Trim() != String.Empty)
             {
-
-                txt_user_name.Text = "User Name";
-
-                txt_user_name.ForeColor = Color.DarkGray;
-
+                btn_login_Click(sender, e);
             }
         }
 
-        private void txt_user_name_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void txt_user_pass_Validated(object sender, EventArgs e)
-        {
-            Panel_line_in_pass.Visible = false;
-            if (txt_user_pass.Text == "")
-            {
-                txt_user_pass.UseSystemPasswordChar = false;
-
-                txt_user_pass.Text = "Password";
-
-                txt_user_pass.ForeColor = Color.DarkGray;
-            }
-        }
-
-        private void txt_user_pass_Enter(object sender, EventArgs e)
-        {
-            Panel_line_in_pass.Visible = true;
-            if (txt_user_pass.Text == "Password")
-            {
-
-                txt_user_pass.Text = "";
-                txt_user_pass.UseSystemPasswordChar = true;
-                txt_user_pass.ForeColor = Color.Black;
-
-            }
-        }
-
-        private void txt_user_name_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            Close();
         }
     }
 }

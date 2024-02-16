@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PN_Order));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pic_order = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbl_order_date = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_state = new System.Windows.Forms.Label();
             this.lbl_custmor_name = new System.Windows.Forms.Label();
             this.lbl_service_nme = new System.Windows.Forms.Label();
-            this.pic_order = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,19 +48,32 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pic_order);
             this.panel1.Controls.Add(this.lbl_order_date);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.lbl_state);
             this.panel1.Controls.Add(this.lbl_custmor_name);
             this.panel1.Controls.Add(this.lbl_service_nme);
-            this.panel1.Controls.Add(this.pic_order);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(881, 69);
             this.panel1.TabIndex = 0;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pic_order
+            // 
+            this.pic_order.BorderRadius = 10;
+            this.pic_order.ErrorImage = global::Dashboard.Properties.Resources.Automation_48px;
+            this.pic_order.Image = global::Dashboard.Properties.Resources.Purchase_Order_48px;
+            this.pic_order.ImageRotate = 0F;
+            this.pic_order.Location = new System.Drawing.Point(6, 7);
+            this.pic_order.Name = "pic_order";
+            this.pic_order.Size = new System.Drawing.Size(57, 48);
+            this.pic_order.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_order.TabIndex = 52;
+            this.pic_order.TabStop = false;
+            this.pic_order.Click += new System.EventHandler(this.pic_order_Click_1);
             // 
             // lbl_order_date
             // 
@@ -89,7 +101,7 @@
             this.lbl_state.AutoEllipsis = true;
             this.lbl_state.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_state.ForeColor = System.Drawing.Color.Black;
-            this.lbl_state.Location = new System.Drawing.Point(776, 22);
+            this.lbl_state.Location = new System.Drawing.Point(766, 22);
             this.lbl_state.Name = "lbl_state";
             this.lbl_state.Size = new System.Drawing.Size(88, 22);
             this.lbl_state.TabIndex = 49;
@@ -121,19 +133,6 @@
             this.lbl_service_nme.TabIndex = 44;
             this.lbl_service_nme.Text = "service_name";
             this.lbl_service_nme.Click += new System.EventHandler(this.lable_ser_name_order_Click);
-            // 
-            // pic_order
-            // 
-            this.pic_order.BaseColor = System.Drawing.Color.White;
-            this.pic_order.Image = ((System.Drawing.Image)(resources.GetObject("pic_order.Image")));
-            this.pic_order.Location = new System.Drawing.Point(3, 7);
-            this.pic_order.Name = "pic_order";
-            this.pic_order.Size = new System.Drawing.Size(57, 48);
-            this.pic_order.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_order.TabIndex = 0;
-            this.pic_order.TabStop = false;
-            this.pic_order.UseTransfarantBackground = false;
-            this.pic_order.Click += new System.EventHandler(this.pic_order_Click);
             // 
             // panel5
             // 
@@ -222,8 +221,6 @@
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaCirclePictureBox pic_order;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_state;
         private System.Windows.Forms.Label lbl_custmor_name;
@@ -236,5 +233,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2PictureBox pic_order;
     }
 }

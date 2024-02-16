@@ -13,19 +13,7 @@ public class ServiceContrller
 
     public static List<Service> GetAllServices()
     {
-        dt = dbm.ExecuteSelectQuery(@"SELECT
-                                        s.id,
-                                        s.name,
-                                        s.category,
-                                        s.price,
-                                        s.available,
-                                        s.description,
-                                        s.details,
-                                        c.name cname,
-                                        c.available cavailable
-                                    FROM service AS s
-                                    JOIN category AS c ON s.category = c.id;
-                                    ");
+        dt = dbm.ExecuteSelectQuery(@"SELECT * FROM `service`");
 
         try
         {
@@ -37,12 +25,13 @@ public class ServiceContrller
                 string name = row["name"].ToString();
                 string categoryId = row["category"].ToString(); // Assuming there's a 'category' column in the result
                 string price = row["price"].ToString();
+                string photo = row["picture"].ToString();
                 bool available = Convert.ToBoolean(row["available"]);
                 string description = row["description"].ToString();
                 string details = row["details"].ToString();
-                Category category = new Category(categoryId, row["cname"].ToString(), Convert.ToBoolean(row["cavailable"]));
+                Category category = CategoryController.getCategoryById(categoryId);
 
-                Service service = new Service(id, name, category, price, available, description, details);
+                Service service = new Service(id, name,photo , category, price, available, description, details);
                 services.Add(service);
             }
         }
@@ -60,32 +49,22 @@ public class ServiceContrller
     public static Service getServiceById(string id)
     {
 
-        dt = dbm.ExecuteSelectQuery(@"SELECT
-                                        s.id,
-                                        s.name,
-                                        s.category,
-                                        s.price,
-                                        s.available,
-                                        s.description,
-                                        s.details,
-                                        c.name cname,
-                                        c.available cavailable
-                                    FROM service AS s
-                                    JOIN category AS c ON s.category = c.id WHERE s.id="+id+";");
-
-
+        dt = dbm.ExecuteSelectQuery(@"SELECT *  FROM service WHERE id="+id+";");
+        if (dt == null) return null;
+        if(dt.Rows.Count == 0) return null; 
         DataRow row = dt.Rows[0];
-
 
         string name = row["name"].ToString();
         string categoryId = row["category"].ToString(); // Assuming there's a 'category' column in the result
         string price = row["price"].ToString();
+        string photo = row["picture"].ToString();
         bool available = Convert.ToBoolean(row["available"]);
         string description = row["description"].ToString();
         string details = row["details"].ToString();
-        Category category = new Category(categoryId, row["cname"].ToString(), Convert.ToBoolean(row["cavailable"]));
+        Category category = CategoryController.getCategoryById(categoryId);
 
-        Service service = new Service(id, name, category, price, available, description, details);
+        Service service = new Service(id, name, photo, category, price, available, description, details);
+
 
 
 

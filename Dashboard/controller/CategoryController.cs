@@ -44,57 +44,21 @@ using System.Threading.Tasks;
 
 
 
-    public static Service getServiceById(string id)
+    public static Category getCategoryById(string id)
     {
 
-        dt = dbm.ExecuteSelectQuery(@"SELECT
-                                        s.id,
-                                        s.name,
-                                        s.category,
-                                        s.price,
-                                        s.available,
-                                        s.description,
-                                        s.details,
-                                        c.name cname,
-                                        c.available cavailable
-                                    FROM service AS s
-                                    JOIN category AS c ON s.category = c.id WHERE s.id=" + id + ";");
+        dt = dbm.ExecuteSelectQuery(@"SELECT * FROM category");
 
-
+        if(dt.Rows.Count == 0) return null;
         DataRow row = dt.Rows[0];
 
-
         string name = row["name"].ToString();
-        string categoryId = row["category"].ToString(); // Assuming there's a 'category' column in the result
-        string price = row["price"].ToString();
         bool available = Convert.ToBoolean(row["available"]);
-        string description = row["description"].ToString();
-        string details = row["details"].ToString();
-        Category category = new Category(categoryId, row["cname"].ToString(), Convert.ToBoolean(row["cavailable"]));
+        Category category = new Category(id, name, available);
+        return category;
 
-        Service service = new Service(id, name, category, price, available, description, details);
-
-
-
-
-        return service;
     }
 
-    public static Service Update(Service service)
-    {
-        string table = "service";
-        Dictionary<string, object> rows = new Dictionary<string, object> {
-            {"name",service.name },
-            {"category", service.category.id },
-            {"picture","d" },
-            {"price","d" },
-            {"available","d" },
-            {"description","d" },
-            {"details","d" },
-        };
-
-        //dbm.UpdateRecord();
-        return service;
-    }
+    
 }
 

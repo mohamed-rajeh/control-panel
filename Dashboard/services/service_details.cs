@@ -23,6 +23,7 @@ namespace Dashboard.services
             txt_desc.Text = _service.description;
             txt_details.Text = _service.details;
             checkBox_Available_service.Focus();
+            ServerController.DownloadAndDisplayImage(_service.photo, pic_photo);
             
             //***************************************************//
             // get all categries into the comboBox
@@ -78,7 +79,7 @@ namespace Dashboard.services
                 txt_details.ReadOnly = false;
                 txt_details.BorderColor = Color.Silver;
                 txt_details.FocusedBorderColor = Color.Silver;
-
+                pic_photo.Enabled = true;
                 checkBox_Available_service.Enabled = true;
                 txt_name.Focus();
                 return;
@@ -94,6 +95,7 @@ namespace Dashboard.services
                     service.description = txt_desc.Text;
                     service.category = cmb_cat.SelectedItem as Category;
                     service.available = checkBox_Available_service.Checked;
+                    
                     if (ServiceContrller.Update(service) != null)
                     {
                         
@@ -121,8 +123,11 @@ namespace Dashboard.services
             service.category =  cmb_cat.SelectedItem as Category;
         }
 
-        private void Txt_Descrip_service_TextChanged(object sender, EventArgs e)
+
+
+        private void pic_photo_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Shoud change the photo");
 
         }
     }

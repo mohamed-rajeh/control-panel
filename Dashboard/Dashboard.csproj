@@ -162,6 +162,7 @@
     <Compile Include="controller\ProviderController.cs" />
     <Compile Include="controller\ProviderRequestController.cs" />
     <Compile Include="controller\ProviderServiceController.cs" />
+    <Compile Include="controller\ServerController.cs" />
     <Compile Include="controller\ServiceContrller.cs" />
     <Compile Include="controller\OrderController.cs" />
     <Compile Include="controller\StateController.cs" />
@@ -542,6 +543,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

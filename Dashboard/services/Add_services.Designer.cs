@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_services));
             this.cmb_cat = new Guna.UI.WinForms.GunaComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.chbox_available = new System.Windows.Forms.CheckBox();
@@ -47,6 +46,7 @@
             this.but_block = new Guna.UI.WinForms.GunaButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.btn_addPhoto = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.img_service = new Guna.UI.WinForms.GunaPictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -307,6 +307,7 @@
             this.gunaElipsePanel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel3.BaseColor = System.Drawing.Color.White;
             this.gunaElipsePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gunaElipsePanel3.Controls.Add(this.btn_addPhoto);
             this.gunaElipsePanel3.Controls.Add(this.label7);
             this.gunaElipsePanel3.Controls.Add(this.img_service);
             this.gunaElipsePanel3.Controls.Add(this.label8);
@@ -315,9 +316,21 @@
             this.gunaElipsePanel3.Size = new System.Drawing.Size(250, 244);
             this.gunaElipsePanel3.TabIndex = 100;
             // 
-            // Add_picture
+            // btn_addPhoto
             // 
-
+            this.btn_addPhoto.BorderRadius = 10;
+            this.btn_addPhoto.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_addPhoto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_addPhoto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_addPhoto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_addPhoto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_addPhoto.ForeColor = System.Drawing.Color.White;
+            this.btn_addPhoto.Location = new System.Drawing.Point(41, 192);
+            this.btn_addPhoto.Name = "btn_addPhoto";
+            this.btn_addPhoto.Size = new System.Drawing.Size(166, 31);
+            this.btn_addPhoto.TabIndex = 95;
+            this.btn_addPhoto.Text = "Add photo";
+            this.btn_addPhoto.Click += new System.EventHandler(this.btn_addPhoto_Click);
             // 
             // label7
             // 
@@ -397,5 +410,6 @@
         private System.Windows.Forms.Label label7;
         private Guna.UI.WinForms.GunaPictureBox img_service;
         private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2Button btn_addPhoto;
     }
 }

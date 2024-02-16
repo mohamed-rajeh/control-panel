@@ -19,6 +19,7 @@ namespace Dashboard.order
             lbl_service_nme.Text = order.service.name;
             lbl_state.Text = order.state.name;
             lbl_order_date.Text = order.date.ToString();
+            ServerController.DownloadAndDisplayImage(order.service.photo, pic_order);
         }
 
        
@@ -63,7 +64,7 @@ namespace Dashboard.order
             order_Details.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void pic_order_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -36,8 +36,8 @@ namespace Dashboard
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // populateItems();
-            
+
+            lbl_adminName.Text = Admin.AdminName ?? "Unknoune";
            
         }
 
@@ -75,8 +75,8 @@ namespace Dashboard
             panl_v.Height = but_User.Height;
             panl_v.Top = but_User.Top;
             panl_v.Left = but_User.Left;
-            but_User.BackColor = Color.FromArgb(230, 230, 230);
-            but_pic_user.BackColor = Color.FromArgb(230, 230, 230);
+           // but_User.BackColor = Color.FromArgb(230, 230, 230);
+           // but_pic_user.BackColor = Color.FromArgb(230, 230, 230);
 
         }
         private void but_User_Leave(object sender, EventArgs e)
@@ -95,8 +95,8 @@ namespace Dashboard
             panl_v.Height = but_services.Height;
             panl_v.Top = but_services.Top;
             panl_v.Left = but_services.Left;
-            but_services.BackColor = Color.FromArgb(230, 230, 230);
-            but_pic_services.BackColor = Color.FromArgb(230, 230, 230);
+           // but_services.BackColor = Color.FromArgb(230, 230, 230);
+           // but_pic_services.BackColor = Color.FromArgb(230, 230, 230);
         }
         private void but_services_Leave(object sender, EventArgs e)
         {
@@ -112,8 +112,8 @@ namespace Dashboard
             panl_v.Height = but_workers.Height;
             panl_v.Top = but_workers.Top;
             panl_v.Left = but_workers.Left;
-            but_workers.BackColor = Color.FromArgb(230, 230, 230);
-            but_pic_worker.BackColor = Color.FromArgb(230, 230, 230);
+           // but_workers.BackColor = Color.FromArgb(230, 230, 230);
+           // but_pic_worker.BackColor = Color.FromArgb(230, 230, 230);
         }
         private void but_workers_Leave(object sender, EventArgs e)
         {
@@ -130,8 +130,8 @@ namespace Dashboard
             panl_v.Height = but_order.Height;
             panl_v.Top = but_order.Top;
             panl_v.Left = but_order.Left;
-            but_order.BackColor = Color.FromArgb(230, 230, 230);
-            but_pic_order.BackColor = Color.FromArgb(230, 230, 230);
+          //  but_order.BackColor = Color.FromArgb(230, 230, 230);
+           // but_pic_order.BackColor = Color.FromArgb(230, 230, 230);
         }
         private void but_order_Leave(object sender, EventArgs e)
         {
@@ -147,8 +147,8 @@ namespace Dashboard
             panl_v.Height = but_Analysis.Height;
             panl_v.Top = but_Analysis.Top;
             panl_v.Left = but_Analysis.Left;
-            but_Analysis.BackColor = Color.FromArgb(230, 230, 230);
-            but_pic_Analysis.BackColor = Color.FromArgb(230, 230, 230);
+          //  but_Analysis.BackColor = Color.FromArgb(230, 230, 230);
+         //   but_pic_Analysis.BackColor = Color.FromArgb(230, 230, 230);
         }
         private void but_Analysis_Leave(object sender, EventArgs e)
         {

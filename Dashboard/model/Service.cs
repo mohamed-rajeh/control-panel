@@ -14,7 +14,7 @@ public class Service
     public string description { get; set; }
     public string details { get; set; }
 
-    public Service(string id, string name, Category category, string price,
+    public Service(string id, string name,string photo, Category category, string price,
                     bool available, string description, string details)
     {
         this.id = id;
@@ -24,6 +24,7 @@ public class Service
         this.available = available;
         this.description = description;
         this.details = details;
+        this.photo = photo;
 
 
     }
