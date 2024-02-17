@@ -30,25 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_login));
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.btn_login = new Guna.UI2.WinForms.Guna2Button();
-            this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.txt_uerName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_pass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_pass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_uerName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_login = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gunaElipsePanel1.SuspendLayout();
-            this.gunaElipsePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.gunaElipsePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,58 +67,25 @@
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Size = new System.Drawing.Size(364, 181);
             this.gunaElipsePanel1.TabIndex = 23;
+            this.gunaElipsePanel1.TabStop = true;
             // 
-            // btn_login
+            // panel2
             // 
-            this.btn_login.BorderRadius = 10;
-            this.btn_login.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_login.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(105, 133);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(180, 45);
-            this.btn_login.TabIndex = 23;
-            this.btn_login.Text = "Login";
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.panel2.Location = new System.Drawing.Point(65, 113);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(280, 3);
+            this.panel2.TabIndex = 25;
+            this.panel2.TabStop = true;
             // 
-            // gunaElipsePanel2
+            // panel1
             // 
-            this.gunaElipsePanel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.gunaElipsePanel2.Controls.Add(this.guna2HtmlLabel3);
-            this.gunaElipsePanel2.Controls.Add(this.gunaCirclePictureBox1);
-            this.gunaElipsePanel2.Controls.Add(this.gunaElipsePanel1);
-            this.gunaElipsePanel2.Location = new System.Drawing.Point(125, 38);
-            this.gunaElipsePanel2.Name = "gunaElipsePanel2";
-            this.gunaElipsePanel2.Size = new System.Drawing.Size(471, 506);
-            this.gunaElipsePanel2.TabIndex = 1;
-            // 
-            // txt_uerName
-            // 
-            this.txt_uerName.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.txt_uerName.BorderColor = System.Drawing.Color.Transparent;
-            this.txt_uerName.BorderThickness = 0;
-            this.txt_uerName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_uerName.DefaultText = "";
-            this.txt_uerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_uerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_uerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_uerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_uerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_uerName.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.txt_uerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_uerName.Location = new System.Drawing.Point(68, 23);
-            this.txt_uerName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txt_uerName.Name = "txt_uerName";
-            this.txt_uerName.PasswordChar = '\0';
-            this.txt_uerName.PlaceholderText = "User name";
-            this.txt_uerName.SelectedText = "";
-            this.txt_uerName.Size = new System.Drawing.Size(277, 40);
-            this.txt_uerName.TabIndex = 24;
-            this.txt_uerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_uerName_KeyDown);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.panel1.Location = new System.Drawing.Point(65, 65);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(280, 3);
+            this.panel1.TabIndex = 25;
+            this.panel1.TabStop = true;
             // 
             // txt_pass
             // 
@@ -141,37 +108,48 @@
             this.txt_pass.PlaceholderText = "Password";
             this.txt_pass.SelectedText = "";
             this.txt_pass.Size = new System.Drawing.Size(277, 40);
-            this.txt_pass.TabIndex = 24;
+            this.txt_pass.TabIndex = 2;
             this.txt_pass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_pass_KeyDown);
             // 
-            // panel1
+            // txt_uerName
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.panel1.Location = new System.Drawing.Point(65, 65);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 3);
-            this.panel1.TabIndex = 25;
+            this.txt_uerName.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.txt_uerName.BorderColor = System.Drawing.Color.Transparent;
+            this.txt_uerName.BorderThickness = 0;
+            this.txt_uerName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_uerName.DefaultText = "";
+            this.txt_uerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_uerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_uerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_uerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_uerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_uerName.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.txt_uerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_uerName.Location = new System.Drawing.Point(68, 23);
+            this.txt_uerName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txt_uerName.Name = "txt_uerName";
+            this.txt_uerName.PasswordChar = '\0';
+            this.txt_uerName.PlaceholderText = "User name";
+            this.txt_uerName.SelectedText = "";
+            this.txt_uerName.Size = new System.Drawing.Size(277, 40);
+            this.txt_uerName.TabIndex = 1;
+            this.txt_uerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_uerName_KeyDown);
             // 
-            // panel2
+            // btn_login
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.panel2.Location = new System.Drawing.Point(65, 113);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 3);
-            this.panel2.TabIndex = 25;
-            // 
-            // gunaCirclePictureBox1
-            // 
-            this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox1.Image = global::Dashboard.Properties.Resources.logo;
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(115, 44);
-            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(262, 210);
-            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaCirclePictureBox1.TabIndex = 0;
-            this.gunaCirclePictureBox1.TabStop = false;
-            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            this.btn_login.BorderRadius = 10;
+            this.btn_login.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_login.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.btn_login.ForeColor = System.Drawing.Color.White;
+            this.btn_login.Location = new System.Drawing.Point(105, 133);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(180, 45);
+            this.btn_login.TabIndex = 3;
+            this.btn_login.Text = "Login";
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // pictureBox5
             // 
@@ -194,6 +172,43 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
+            // 
+            // gunaElipsePanel2
+            // 
+            this.gunaElipsePanel2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.gunaElipsePanel2.Controls.Add(this.guna2HtmlLabel3);
+            this.gunaElipsePanel2.Controls.Add(this.gunaCirclePictureBox1);
+            this.gunaElipsePanel2.Controls.Add(this.gunaElipsePanel1);
+            this.gunaElipsePanel2.Location = new System.Drawing.Point(125, 38);
+            this.gunaElipsePanel2.Name = "gunaElipsePanel2";
+            this.gunaElipsePanel2.Size = new System.Drawing.Size(471, 506);
+            this.gunaElipsePanel2.TabIndex = 1;
+            this.gunaElipsePanel2.TabStop = true;
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Vivaldi", 24F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(191, 3);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(121, 40);
+            this.guna2HtmlLabel3.TabIndex = 26;
+            this.guna2HtmlLabel3.Text = "Khadmat";
+            // 
+            // gunaCirclePictureBox1
+            // 
+            this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox1.Image = global::Dashboard.Properties.Resources.logo;
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(115, 44);
+            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(262, 210);
+            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaCirclePictureBox1.TabIndex = 0;
+            this.gunaCirclePictureBox1.TabStop = false;
+            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
             // pictureBox3
             // 
@@ -219,17 +234,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(120, 40);
             this.guna2HtmlLabel2.TabIndex = 25;
             this.guna2HtmlLabel2.Text = "Wellcome";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Vivaldi", 24F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(191, 3);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(121, 40);
-            this.guna2HtmlLabel3.TabIndex = 26;
-            this.guna2HtmlLabel3.Text = "Khadmat";
             // 
             // guna2HtmlLabel4
             // 
@@ -268,12 +272,13 @@
             this.Name = "frm_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
+            this.Load += new System.EventHandler(this.frm_login_Load);
             this.gunaElipsePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.gunaElipsePanel2.ResumeLayout(false);
             this.gunaElipsePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

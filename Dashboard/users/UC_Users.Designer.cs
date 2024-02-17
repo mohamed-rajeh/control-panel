@@ -37,23 +37,23 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.Panel_users = new Guna.UI.WinForms.GunaGradientPanel();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.Users_Label1 = new Guna.UI.WinForms.GunaLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Panel_blocked = new Guna.UI.WinForms.GunaGradientPanel();
-            this.user_Unavailable_Label = new Guna.UI.WinForms.GunaLabel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Elipse_blocked = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Elipse_user = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.Panel_users = new Guna.UI.WinForms.GunaGradientPanel();
+            this.lbl_users = new Guna.UI.WinForms.GunaLabel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Panel_blocked = new Guna.UI.WinForms.GunaGradientPanel();
+            this.lbl_blockedUsers = new Guna.UI.WinForms.GunaLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1.SuspendLayout();
             this.gunaElipsePanel1.SuspendLayout();
             this.Panel_users.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.Panel_blocked.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel_user
@@ -131,118 +131,6 @@
             this.gunaElipsePanel1.Size = new System.Drawing.Size(574, 147);
             this.gunaElipsePanel1.TabIndex = 64;
             // 
-            // Panel_users
-            // 
-            this.Panel_users.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_users.BackgroundImage")));
-            this.Panel_users.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Panel_users.Controls.Add(this.guna2CirclePictureBox2);
-            this.Panel_users.Controls.Add(this.Users_Label1);
-            this.Panel_users.Controls.Add(this.label3);
-            this.Panel_users.ForeColor = System.Drawing.Color.Black;
-            this.Panel_users.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Panel_users.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Panel_users.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Panel_users.GradientColor4 = System.Drawing.Color.White;
-            this.Panel_users.Location = new System.Drawing.Point(56, 25);
-            this.Panel_users.Name = "Panel_users";
-            this.Panel_users.Quality = 8;
-            this.Panel_users.Size = new System.Drawing.Size(165, 94);
-            this.Panel_users.TabIndex = 66;
-            this.Panel_users.Text = "gunaGradientPanel1";
-            // 
-            // guna2CirclePictureBox2
-            // 
-            this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox2.Image = global::Dashboard.Properties.Resources.User_48px;
-            this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(12, 13);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(40, 32);
-            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox2.TabIndex = 60;
-            this.guna2CirclePictureBox2.TabStop = false;
-            // 
-            // Users_Label1
-            // 
-            this.Users_Label1.AutoSize = true;
-            this.Users_Label1.BackColor = System.Drawing.Color.Transparent;
-            this.Users_Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Users_Label1.Font = new System.Drawing.Font("Segoe UI Emoji", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
-            this.Users_Label1.Location = new System.Drawing.Point(83, 50);
-            this.Users_Label1.Name = "Users_Label1";
-            this.Users_Label1.Size = new System.Drawing.Size(30, 35);
-            this.Users_Label1.TabIndex = 48;
-            this.Users_Label1.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(68, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 26);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Users";
-            // 
-            // Panel_blocked
-            // 
-            this.Panel_blocked.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_blocked.BackgroundImage")));
-            this.Panel_blocked.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Panel_blocked.Controls.Add(this.user_Unavailable_Label);
-            this.Panel_blocked.Controls.Add(this.label5);
-            this.Panel_blocked.Controls.Add(this.guna2CirclePictureBox1);
-            this.Panel_blocked.ForeColor = System.Drawing.Color.Black;
-            this.Panel_blocked.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Panel_blocked.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Panel_blocked.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Panel_blocked.GradientColor4 = System.Drawing.Color.White;
-            this.Panel_blocked.Location = new System.Drawing.Point(351, 25);
-            this.Panel_blocked.Name = "Panel_blocked";
-            this.Panel_blocked.Quality = 8;
-            this.Panel_blocked.Size = new System.Drawing.Size(165, 94);
-            this.Panel_blocked.TabIndex = 65;
-            this.Panel_blocked.Text = "gunaGradientPanel1";
-            // 
-            // user_Unavailable_Label
-            // 
-            this.user_Unavailable_Label.AutoSize = true;
-            this.user_Unavailable_Label.BackColor = System.Drawing.Color.Transparent;
-            this.user_Unavailable_Label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.user_Unavailable_Label.Font = new System.Drawing.Font("Segoe UI Emoji", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
-            this.user_Unavailable_Label.Location = new System.Drawing.Point(87, 50);
-            this.user_Unavailable_Label.Name = "user_Unavailable_Label";
-            this.user_Unavailable_Label.Size = new System.Drawing.Size(30, 35);
-            this.user_Unavailable_Label.TabIndex = 48;
-            this.user_Unavailable_Label.Text = "0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(62, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 26);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "blocked";
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.Image = global::Dashboard.Properties.Resources.user;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 16);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(40, 32);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 59;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
             // Elipse_blocked
             // 
             this.Elipse_blocked.BorderRadius = 30;
@@ -259,6 +147,114 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // Panel_users
+            // 
+            this.Panel_users.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_users.BackgroundImage")));
+            this.Panel_users.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel_users.Controls.Add(this.guna2PictureBox1);
+            this.Panel_users.Controls.Add(this.lbl_users);
+            this.Panel_users.Controls.Add(this.label3);
+            this.Panel_users.ForeColor = System.Drawing.Color.Black;
+            this.Panel_users.GradientColor1 = System.Drawing.Color.White;
+            this.Panel_users.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Panel_users.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Panel_users.GradientColor4 = System.Drawing.Color.White;
+            this.Panel_users.Location = new System.Drawing.Point(56, 25);
+            this.Panel_users.Name = "Panel_users";
+            this.Panel_users.Quality = 8;
+            this.Panel_users.Size = new System.Drawing.Size(195, 94);
+            this.Panel_users.TabIndex = 66;
+            this.Panel_users.Text = "gunaGradientPanel1";
+            // 
+            // lbl_users
+            // 
+            this.lbl_users.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_users.Font = new System.Drawing.Font("Segoe UI Emoji", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
+            this.lbl_users.Location = new System.Drawing.Point(78, 48);
+            this.lbl_users.Name = "lbl_users";
+            this.lbl_users.Size = new System.Drawing.Size(114, 35);
+            this.lbl_users.TabIndex = 48;
+            this.lbl_users.Text = "0";
+            this.lbl_users.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(96, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 26);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Users";
+            // 
+            // Panel_blocked
+            // 
+            this.Panel_blocked.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_blocked.BackgroundImage")));
+            this.Panel_blocked.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel_blocked.Controls.Add(this.guna2PictureBox2);
+            this.Panel_blocked.Controls.Add(this.lbl_blockedUsers);
+            this.Panel_blocked.Controls.Add(this.label5);
+            this.Panel_blocked.ForeColor = System.Drawing.Color.Black;
+            this.Panel_blocked.GradientColor1 = System.Drawing.Color.White;
+            this.Panel_blocked.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Panel_blocked.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Panel_blocked.GradientColor4 = System.Drawing.Color.White;
+            this.Panel_blocked.Location = new System.Drawing.Point(351, 25);
+            this.Panel_blocked.Name = "Panel_blocked";
+            this.Panel_blocked.Quality = 8;
+            this.Panel_blocked.Size = new System.Drawing.Size(195, 94);
+            this.Panel_blocked.TabIndex = 65;
+            this.Panel_blocked.Text = "gunaGradientPanel1";
+            // 
+            // lbl_blockedUsers
+            // 
+            this.lbl_blockedUsers.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_blockedUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_blockedUsers.Font = new System.Drawing.Font("Segoe UI Emoji", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
+            this.lbl_blockedUsers.Location = new System.Drawing.Point(79, 50);
+            this.lbl_blockedUsers.Name = "lbl_blockedUsers";
+            this.lbl_blockedUsers.Size = new System.Drawing.Size(113, 35);
+            this.lbl_blockedUsers.TabIndex = 48;
+            this.lbl_blockedUsers.Text = "0";
+            this.lbl_blockedUsers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(80, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 26);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "blocked";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Dashboard.Properties.Resources.group;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(22, 33);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 67;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::Dashboard.Properties.Resources.block_user;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(23, 33);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 67;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // UC_Users
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -274,10 +270,10 @@
             this.gunaElipsePanel1.ResumeLayout(false);
             this.Panel_users.ResumeLayout(false);
             this.Panel_users.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.Panel_blocked.ResumeLayout(false);
             this.Panel_blocked.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,14 +289,14 @@
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Elipse Elipse_user;
         private Guna.UI.WinForms.GunaGradientPanel Panel_users;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
-        private Guna.UI.WinForms.GunaLabel Users_Label1;
+        private Guna.UI.WinForms.GunaLabel lbl_users;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaGradientPanel Panel_blocked;
-        private Guna.UI.WinForms.GunaLabel user_Unavailable_Label;
+        private Guna.UI.WinForms.GunaLabel lbl_blockedUsers;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.ImageList imageList1;
         private Guna.UI2.WinForms.Guna2TextBox txt_search;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

@@ -23,8 +23,10 @@ namespace Dashboard
             dt = dbm.ExecuteSelectQuery(sql);
             if (dt.Rows.Count > 0)
             {
+                DataRow row = dt.Rows[0];
+                Admin.AdminName = row["name"].ToString();
                 this.Hide();
-                Form2 form = new Form2();
+                Home form = new Home();
                 form.Show();
                 return;
             } 
@@ -65,6 +67,11 @@ namespace Dashboard
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void frm_login_Load(object sender, EventArgs e)
+        {
+            txt_uerName.Focus();
         }
     }
 }

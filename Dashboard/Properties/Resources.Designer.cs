@@ -123,9 +123,29 @@ namespace Dashboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap block_user {
+            get {
+                object obj = ResourceManager.GetObject("block_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cancel_48px {
             get {
                 object obj = ResourceManager.GetObject("Cancel_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chart_icon {
+            get {
+                object obj = ResourceManager.GetObject("chart_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +186,16 @@ namespace Dashboard.Properties {
         internal static System.Drawing.Bitmap Glue_40px {
             get {
                 object obj = ResourceManager.GetObject("Glue_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap group {
+            get {
+                object obj = ResourceManager.GetObject("group", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +283,16 @@ namespace Dashboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap orders_icon {
+            get {
+                object obj = ResourceManager.GetObject("orders_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pass {
             get {
                 object obj = ResourceManager.GetObject("pass", resourceCulture);
@@ -306,6 +346,16 @@ namespace Dashboard.Properties {
         internal static System.Drawing.Bitmap Search_488px {
             get {
                 object obj = ResourceManager.GetObject("Search_488px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap service_icon {
+            get {
+                object obj = ResourceManager.GetObject("service_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

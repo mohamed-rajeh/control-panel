@@ -1,6 +1,5 @@
 ﻿using System;
-namespace Dashboard.model
-{
+
     public class Admin
     {
         public static string AdminName { get; set;}
@@ -24,5 +23,5 @@ namespace Dashboard.model
         }
 
       
-    }
+    
 }

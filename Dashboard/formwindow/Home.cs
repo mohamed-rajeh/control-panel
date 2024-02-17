@@ -3,14 +3,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Data;
-using Dashboard.model;
 namespace Dashboard
 {
    
-    public partial class Form2 : Form
+    public partial class Home : Form
     {
         public Admin admin;
-        public Form2()
+        public Home()
         {
             InitializeComponent();
             try
@@ -154,21 +153,6 @@ namespace Dashboard
         {
             but_Analysis.BackColor = Color.FromArgb(253, 253, 253);
             but_pic_Analysis.BackColor = Color.FromArgb(253, 253, 253);
-        }
-
-
-        private void but_sttings_Click(object sender, EventArgs e)
-        {
-            panl_v.Height = but_sttings.Height;
-            panl_v.Top = but_sttings.Top;
-            panl_v.Left = but_sttings.Left;
-            but_sttings.BackColor = Color.FromArgb(230, 230, 230);
-            but_pic_setting.BackColor = Color.FromArgb(230, 230, 230);
-        }
-        private void but_sttings_Leave(object sender, EventArgs e)
-        {
-            but_sttings.BackColor = Color.FromArgb(253, 253, 253);
-            but_pic_setting.BackColor = Color.FromArgb(253, 253, 253);
         }
 
 

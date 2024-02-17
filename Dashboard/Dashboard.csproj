@@ -266,11 +266,11 @@
     <Compile Include="formwindow\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="formwindow\Form2.cs">
+    <Compile Include="formwindow\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formwindow\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="formwindow\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -385,8 +385,8 @@
     <EmbeddedResource Include="formwindow\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formwindow\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="formwindow\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -564,6 +564,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\users.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orders_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block_user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

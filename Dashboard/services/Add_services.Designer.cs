@@ -270,7 +270,7 @@
             this.but_block.AnimationHoverSpeed = 0.07F;
             this.but_block.AnimationSpeed = 0.03F;
             this.but_block.BackColor = System.Drawing.Color.Transparent;
-            this.but_block.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
+            this.but_block.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
             this.but_block.BorderColor = System.Drawing.Color.Black;
             this.but_block.Cursor = System.Windows.Forms.Cursors.Hand;
             this.but_block.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -279,7 +279,7 @@
             this.but_block.ForeColor = System.Drawing.Color.Black;
             this.but_block.Image = global::Dashboard.Properties.Resources.Addd_64px;
             this.but_block.ImageSize = new System.Drawing.Size(20, 20);
-            this.but_block.Location = new System.Drawing.Point(617, 476);
+            this.but_block.Location = new System.Drawing.Point(624, 476);
             this.but_block.Name = "but_block";
             this.but_block.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.but_block.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -287,17 +287,17 @@
             this.but_block.OnHoverImage = null;
             this.but_block.OnPressedColor = System.Drawing.Color.Black;
             this.but_block.Radius = 12;
-            this.but_block.Size = new System.Drawing.Size(124, 43);
+            this.but_block.Size = new System.Drawing.Size(117, 43);
             this.but_block.TabIndex = 74;
             this.but_block.Text = "Add";
             this.but_block.Click += new System.EventHandler(this.but_block_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Dashboard.Properties.Resources.Automation_48px;
-            this.pictureBox1.Location = new System.Drawing.Point(350, 12);
+            this.pictureBox1.Image = global::Dashboard.Properties.Resources.service_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(393, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 61);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
@@ -323,6 +323,7 @@
             this.btn_addPhoto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_addPhoto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_addPhoto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_addPhoto.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
             this.btn_addPhoto.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_addPhoto.ForeColor = System.Drawing.Color.White;
             this.btn_addPhoto.Location = new System.Drawing.Point(41, 192);
@@ -337,19 +338,19 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.label7.Location = new System.Drawing.Point(82, 16);
+            this.label7.Location = new System.Drawing.Point(90, -1);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 25);
+            this.label7.Size = new System.Drawing.Size(68, 25);
             this.label7.TabIndex = 94;
-            this.label7.Text = "Add pic";
+            this.label7.Text = "Photo";
             // 
             // img_service
             // 
             this.img_service.BaseColor = System.Drawing.Color.White;
             this.img_service.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.img_service.Location = new System.Drawing.Point(41, 55);
+            this.img_service.Location = new System.Drawing.Point(49, 27);
             this.img_service.Name = "img_service";
-            this.img_service.Size = new System.Drawing.Size(166, 125);
+            this.img_service.Size = new System.Drawing.Size(150, 150);
             this.img_service.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_service.TabIndex = 93;
             this.img_service.TabStop = false;

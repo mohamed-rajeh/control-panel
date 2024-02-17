@@ -29,9 +29,9 @@ namespace Dashboard
             {
                 //getData(dt);
                 addUSers(_users);
-                Users_Label1.Text = _users.Count.ToString();  // to show count of users ^^
+                lbl_users.Text = _users.Count.ToString();  // to show count of users ^^
                 // to get blocked users ^^
-                user_Unavailable_Label.Text = _users.FindAll(user => user.Availbale ==false).Count.ToString();
+                lbl_blockedUsers.Text = _users.FindAll(user => user.Availbale ==false).Count.ToString();
 
 
             }
